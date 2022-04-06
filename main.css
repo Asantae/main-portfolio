@@ -4,7 +4,12 @@
     padding: 0;
     font-family: 'Exo 2', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a {
+    color: greenyellow;
 }
 
 body {
@@ -25,15 +30,40 @@ body {
     height: 200px;
     height: 450px;
     width: 50%;
+    transition: .5s;
 
 }
 
 #about-box {
     background-color: #580f40d3;
+    
+}
+
+#resume-box:hover {
+    width: 100%;
+}
+
+#about-box:hover {
+    width: 100%;
 }
 
 #resume-box {
     background-color: #4d0a74d7;
+}
+
+.image-code {
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.project-image {
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
 }
 
 .upper-box {
@@ -42,17 +72,16 @@ body {
     align-items: center;
     width: 100vw;
     
-    margin-bottom: -25px;
+    margin-bottom: -50px;
 }
 
 .inner-boxes {
-    position: relative;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #3f244f;
-    height: 350px;
+    height: 400px;
     width: 700px;
     margin-bottom: 5px;
     flex-direction: column;
@@ -60,11 +89,65 @@ body {
 
 }
 
+/* portfolio-box {
+    width: 100%;
+} */
 
 .portfolio-link {
-    position: absolute;
+    background-color: orange;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     color: white;
-    bottom: 15%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+footer {
+    background-color: pink;
+    height: 175px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: red;
+    width: 45%;
+    height: 100%;
+    padding-top:  40px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.footer-left {
+
+}
+
+.input-name {
+    display: flex;
+
+}
+
+.footer-right {
+    align-items: flex-end;
+}
+
+.socials-div {
+    display: flex;
+    justify-content: flex-start;
+    width: 145px;
+    align-items: flex-end;
+}
+
+.socials {
+    width: 25px;
 }
 
 @media (max-width: 1024px) {
