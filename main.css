@@ -58,12 +58,50 @@ body {
     justify-content: space-around;
     padding-left: 30px;
     padding-right: 30px;
+
 }
 
 .project-image {
     height: 250px;
     width: 200px;
     border-radius: 10px;
+
+}
+
+#code-img {
+    transition: .2s;
+}
+
+#live-img {
+    transition: .2s;
+}
+
+#code-img:hover {
+    border: 3px solid red;
+    
+}
+
+#live-img:hover {
+    border: 3px solid red;
+    
+}
+
+#code-span {
+    transition: .2s;
+
+}
+
+#url-span {
+    transition: .2s;
+
+}
+
+#code-span:hover {
+    color: black;
+}
+
+#url-span:hover {
+    color: black;
 }
 
 .upper-box {
@@ -71,8 +109,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    
     margin-bottom: -50px;
+
 }
 
 .inner-boxes {
