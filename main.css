@@ -220,7 +220,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(black, #3f244f);
+    background: linear-gradient(black, hsl(286deg 97% 13%));
     padding: 50px;
 
 }
