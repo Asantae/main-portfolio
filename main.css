@@ -2,8 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Exo 2', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif, 'Open Sans', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -14,7 +13,7 @@ main {
     position: relative;
     z-index: 1;
     padding: .4rem;
-    border-bottom: 3px solid black;
+
   }
 
 body {
@@ -47,26 +46,26 @@ li {
 }
 
 .nav-links:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
-.resume-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 375px;
-    background-color: blue;
-    border: 3px solid orange;
-}
-
-.name-logo, .nav-mid, .nav-right {
+.name-logo {
     color: whitesmoke;
     padding-top: 6px;
     padding-left: 10px;
     font-weight: bold;
     text-shadow:  2px 2px 0px black;
-    padding-right: 50px;
+    padding-right: 15px;
+}
+
+.nav-right {
+    margin-top: 100px;
+    color: whitesmoke;
+    padding-top: 6px;
+    padding-left: 10px;
+    font-weight: bold;
+    text-shadow:  2px 2px 0px black;
+    padding-right: 15px;
 }
 
 .container {
@@ -85,132 +84,30 @@ li {
 
 }
 
-h1 {
-    font-size: 72px;
-    color: whitesmoke;
-    text-shadow:  5px 5px 5px black;
-
-}
-
-
-#resume-box {
-    position: absolute;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    height: 450px;
-    width: 100%;
-}
-
 #upper-box-background {
     width: 100%;
     height: 100%;
 }
 
-.resume-info {
+.action-call {
+    position: absolute;
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-
-}
-
-.resume-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 50px;
-    font-weight: bold;
-    color: black;
-    background-color: whitesmoke;
-    padding: 5px;
-}
-
-.project-boxes {
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: whitesmoke;
-    height: 375px;
-    width: 700px;
-    margin-bottom: 5px;
     flex-direction: column;
-    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.234);
-    margin-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    font-size: 72px;
+    color: whitesmoke;
+    padding-bottom: 35%;
+    text-shadow:  5px 5px 5px black;
 
 }
 
 h2 {
     padding-bottom: 10px;
-}
-
-.project-description {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-
-}
-
-.image-code {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.portfolio-link {
-    position: absolute;
-    color: whitesmoke;
-    top: 85%;
-    font-size: 15px;
-}
-
-.img-button {
-    overflow: hidden;
-    height: 250px;
-    width: 200px;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    transition: .1s;
-}
-
-.img-button:hover {
-    outline: #3f244f solid 3px;
-}
-
-.project-image {
-    border-radius: 10px;
-    height: 250px;
-}
-
-#code-span {
-    transition: .2s;
-
-}
-
-#url-span {
-    transition: .2s;
-
-}
-
-#code-span:hover {
-    color: black;
-}
-
-#url-span:hover {
-    color: black;
 }
 
 footer {
@@ -306,61 +203,5 @@ footer {
 }
 
 @media (max-width: 425px) {
-    .project-boxes {
-        margin: 0;
-        width: 375px;
-    }
-}
-
-/* Modals */
-
-.modal-container {
-    opacity: 0;
-    pointer-events: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    background-color: rgba(0, 0, 0, .4);
-    height: 100vh;
-    width: 100vw;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-
-}
-
-
-
-.modal-container.show {
-    pointer-events: auto;
-    opacity: 1;
-
-}
-
-.scrollable-modal {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: whitesmoke;
-    padding-bottom: 50px;
-    width: 475px;
-    height: 75vh;
-    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.768);
-    overflow-y: scroll;
-    overflow-x: visible;
-
-}
-
-.modal-close-button {
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: transparent;
-
+    
 }

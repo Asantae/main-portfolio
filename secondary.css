@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif, 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+    background: whitesmoke;
+    position: relative;
+    z-index: 1;
+    padding: .4rem;
+  }
+
+body {
+    min-height: 100vh;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    min-width: 100vw;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li {
+    padding-right: 15px;
+}
+
+.nav-links {
+    color: black;
+    padding-bottom: 3px;
+}
+
+.nav-links:hover {
+    border-bottom: 2px solid hsl(286deg 97% 13%);
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 375px;
+    background-color: blue;
+    border: 3px solid orange;
+}
+
+.name-logo, .nav-mid, .nav-right {
+    color: black;
+    padding-top: 6px;
+    padding-left: 10px;
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.project-page-summary {
+    width: 650px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+#emphasis-link {
+    color: black;
+    font-weight: bold;
+    border-bottom: 3px solid hsl(286deg 97% 13%);
+}
+
+#emphasis-link:hover {
+    color: grey;
+}
+
+
+.my-work-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 72px;
+    color: whitesmoke;
+    text-shadow:  5px 5px 5px black;
+
+}
+
+
+#resume-box {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+#upper-box-background {
+    width: 100%;
+    height: 100%;
+}
+
+.resume-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+    color: black;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-left: 13px;
+    margin-right: 13px;
+    border: 2px solid black;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.234);
+}
+
+.resume-links:hover {
+    color: whitesmoke;
+    background-color: hsl(286deg 97% 13%);
+}
+
+#resume-download {
+
+}
+
+.project-boxes {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: whitesmoke;
+    width: 700px;
+    flex-direction: column;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.234);
+    margin-bottom: 25px;
+    margin-left: 13px;
+    margin-right: 13px;
+
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.project-description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+.image-code {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    
+}
+
+.portfolio-link {
+    position: absolute;
+    color: whitesmoke;
+    top: 85%;
+    font-size: 15px;
+}
+
+.img-button {
+    overflow: hidden;
+    height: 250px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: .1s;
+}
+
+.img-button:hover {
+    box-shadow: 0px 0px 20px 2px hsl(286deg 97% 13%);
+    cursor: pointer;
+}
+
+.project-image {
+    border-radius: 10px;
+    height: 250px;
+}
+
+#code-span {
+    transition: .2s;
+
+}
+
+#url-span {
+    transition: .2s;
+
+}
+
+#code-span:hover {
+    color: black;
+}
+
+#url-span:hover {
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(black, hsl(286deg 97% 13%));
+    padding: 50px;
+
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    height: 100%;
+}
+
+.input-name {
+    display: flex;
+    width: 100%;
+}
+
+.input-name-full {
+    display: flex;
+    padding-left: 10px;
+    width: 50%;
+    outline: none;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 2px;
+    
+}
+
+.input-message {
+    width: 100%;
+    height: 100px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 2px;
+    padding-left: 5px;
+    overflow: visible;
+}
+
+#submit {
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 12px;
+    background-color: #3f244f;
+    border-radius: 3px;
+    transition: .1s;
+    border: none;
+    outline: none;
+}
+
+#submit:hover {
+    background-color: hsla(172, 67%, 45%, 1);
+    cursor: pointer;
+}
+
+.footer-right {
+    align-items: flex-end;
+}
+
+.socials-div {
+    display: flex;
+    justify-content: flex-start;
+    width: 145px;
+    align-items: flex-end;
+}
+
+.socials {
+    width: 25px;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 425px) {
+    .project-boxes {
+        margin: 0;
+        width: 375px;
+    }
+}
+
+/* Modals */
+
+.modal-container {
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+
+}
+
+.scrollable-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+    width: 475px;
+    height: 75vh;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.768);
+    overflow-y: scroll;
+    overflow-x: visible;
+
+}
+
+.modal-close-button {
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+}
