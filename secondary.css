@@ -309,6 +309,14 @@ footer {
 }
 
 @media (max-width: 767px) {
+    .name-logo{
+        font-size: 15px;
+    }
+
+    .nav-right {
+        font-size: 15px;
+    }
+
     h1 {
         font-size: 32px;
         padding-bottom: 5%;
@@ -316,9 +324,12 @@ footer {
 
     }
 
-    .call {
-        font-size: 12px;
-        width: 275px;
+    .project-page-summary {
+        font-size: 25px;
+    }
+
+    .project-boxes {
+        width: 95%;
     }
 
 
@@ -329,8 +340,36 @@ footer {
 
 }
 @media (max-width: 574px) {
+    .scrollable-modal {
+        width: 350px;
+    }
+
+    .resume-links {
+        font-size: 12px;
+
+    }
+
+    .name-logo{
+        font-size: 10px;
+    }
+
+    .nav-right {
+        font-size: 10px;
+    }
+
+    .img-button {
+        width: 150px;
+        height: 175px;
+    }
+
+    .project-page-summary {
+        width: 289px;
+        font-size: 15px;
+    }
+
     .footer-column {
         width: 100%;
+
     }
 }
 
