@@ -413,7 +413,12 @@ label {
 }
 
 #success {
+    font-size: 25px;
+    position: absolute;
     color: #28A745;
+    font-weight: bold;
+    top: 50%;
+    background-color: black;
 }
 
 h2 {
