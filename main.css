@@ -44,19 +44,19 @@ header {
 }
 
 .nav-links {
-    font-size: 35px;
+    font-size: 40px;
     box-shadow: inset 0 0 0 0 whitesmoke;
     transition: color .35s ease-in-out, box-shadow .35s ease-in-out;
     color: whitesmoke;
     padding-bottom: 3px;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 16px;
+    padding-right: 16px;
     
 }
 
 .nav-links:hover {
     color: #3f244f;
-    box-shadow: inset 200px 0 0 0 whitesmoke;
+    box-shadow: inset 350px 0 0 0 whitesmoke;
     text-shadow: none;
 
 }
@@ -222,11 +222,9 @@ footer {
     background-color: #ffffff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     #name {
         font-size: 10px; 
-    }
-    main{
     }
     
     h1 {
@@ -257,6 +255,11 @@ footer {
 
 }
 @media (max-width: 574px) {
+    .nav-links {
+        font-size: 12px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
     .footer-column {
         width: 100%;
     }
