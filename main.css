@@ -126,6 +126,7 @@ header {
 }
 
 h1 {
+    text-align: center;
     font-size: 72px;
     color: whitesmoke;
     padding-bottom: 10%;
