@@ -320,6 +320,12 @@ form {
 
 }
 
+.form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .inner-form {
     padding-top: 50px;
     display: flex;
@@ -327,7 +333,11 @@ form {
     align-items: center;
     flex-direction: column;
     background-color: whitesmoke;
-    width: 100%;
+}
+
+inner-form.hide {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .form-top {
@@ -356,14 +366,6 @@ label {
     margin: 20px 0;
 }
 
-.form-center {
-    width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: flex-end;
-   padding-top: 60px;
-}
-
 #form-submit {
     color: white;
     width: 40%;
@@ -374,6 +376,7 @@ label {
     font-size: 25px;
     font-weight: 700;
     border-radius: 6px;
+    margin-top: 30px;
     background-color: rgba(63, 36, 79, .3);
 }
 

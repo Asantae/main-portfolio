@@ -1,10 +1,10 @@
 /* form validation */
 
 //get data
+const form = document.getElementById('my-form');
 const nameInput = document.querySelector("#form-name");
 const userEmail = document.querySelector("#form-email");
 const userMessage = document.querySelector("#form-message");
-const success = document.querySelector("#success");
 const errorNodes = document.querySelectorAll(".error");
 
 // validate data
@@ -31,7 +31,7 @@ function validateForm(){
     }
 
     if(!errorFlag){
-        success.innerText = "Thank You!"
+        form.submit();
     }
 
 }
@@ -42,7 +42,6 @@ function clearMessages(){
     for(let i = 0; i < errorNodes.length; i++){
         errorNodes[i].innerText = "";
     }
-    success.innerText = "";
     nameInput.classList.remove("error-border");
     userEmail.classList.remove("error-border");
     userMessage.classList.remove("error-border");
