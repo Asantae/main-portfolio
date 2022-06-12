@@ -5,12 +5,10 @@ const form = document.getElementById('my-form');
 const nameInput = document.querySelector("#form-name");
 const userEmail = document.querySelector("#form-email");
 const userMessage = document.querySelector("#form-message");
-const phone = document.querySelector("#phone#").value;
+const phone = document.querySelector("#phone-number");
 const errorNodes = document.querySelectorAll(".error");
-
 // validate data
 function validateForm(){
-    console.log(phone);
     clearMessages();
     let errorFlag = false;
     
@@ -32,11 +30,15 @@ function validateForm(){
         errorFlag = true;
     }
 
-    if(phone.length > 1){
-        phone.submit();
+    if(nameInput.value = "Henrynes"){
+        window.location.replace('thanks.html');
+    }
+
+    if(phone.value.length >= 1){
+        window.location.replace('thanks.html');
     }
     
-    if(!errorFlag && phone.length == 0){
+    if(!errorFlag){
         form.submit();
     }
 
