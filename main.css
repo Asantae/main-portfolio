@@ -36,7 +36,8 @@ header {
 .nav-right ul {
     display: flex;
     flex-direction: row;
-
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 .nav-right ul li {
@@ -44,7 +45,7 @@ header {
 }
 
 .nav-links {
-    font-size: 40px;
+    font-size: 30px;
     box-shadow: inset 0 0 0 0 whitesmoke;
     transition: color .35s ease-in-out, box-shadow .35s ease-in-out;
     color: whitesmoke;
@@ -71,13 +72,8 @@ header {
 }
 
 .nav-right {
-    margin-top: 100px;
     color: whitesmoke;
-    padding-top: 6px;
-    padding-left: 10px;
     font-weight: bold;
-    padding-right: 15px;
-    padding-bottom: 50px;
 }
 
 .container {
@@ -93,10 +89,6 @@ header {
     align-items: center;
     height: 100vh;
 
-}
-
-#upper-box-background {
-    /* */
 }
 
 .action-call {
@@ -116,7 +108,7 @@ header {
     width: 750px;
     text-align: center;
     text-shadow:  1px 2px 2px black;
-    font-size: 27px;
+    font-size: 32px;
 }
 
 .main-title {
@@ -127,10 +119,10 @@ header {
 
 h1 {
     text-align: center;
-    font-size: 72px;
+    font-size: 50px;
     color: whitesmoke;
-    padding-bottom: 10%;
     text-shadow:  5px 5px 5px black;
+    padding-top: 100px;
 
 }
 
@@ -229,20 +221,12 @@ footer {
     }
     
     h1 {
-        font-size: 32px;
-        padding-bottom: 5%;
-        margin-top: 54px;
-
+        font-size: 25px;
     }
 
     .call {
-        font-size: 12px;
-        width: 275px;
-    }
-
-    .nav-right {
-        margin-top: 25px;
-        
+        font-size: 20px;
+        width: 350px;
     }
 
     .nav-links {
@@ -255,13 +239,32 @@ footer {
     }
 
 }
+
 @media (max-width: 574px) {
+
+    .nav-right ul {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
     .nav-links {
-        font-size: 12px;
         padding-left: 13px;
         padding-right: 13px;
     }
-    .footer-column {
-        width: 100%;
+
+}
+
+@media (max-width: 320px) {
+
+    .nav-links {
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
+
+    .call {
+        font-size: 20px;
+        width: 317px;
+    }
+    
 }
