@@ -195,7 +195,7 @@ h2 {
     text-align: center;
     width: 100vw;
     margin-bottom: 25px;
-    margin-top: 150px;
+    margin-top: 75px;
 }
 
 .resume-links {
@@ -530,6 +530,10 @@ p5 {
 
 
 @media (max-width: 768px) {
+
+    #resume-box {
+        margin-top: 150px;
+    }
 
     .about-outline {
         display: contents;
