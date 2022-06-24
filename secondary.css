@@ -195,7 +195,7 @@ h2 {
     text-align: center;
     width: 100vw;
     margin-bottom: 25px;
-    margin-top: 75px;
+    margin-top: 150px;
 }
 
 .resume-links {
@@ -542,6 +542,10 @@ p5 {
     video {
         width: 230px;
         height: 230px;
+    }
+
+    .social-links-vid {
+        margin-bottom: 25px;
     }
 
     .video-container {
