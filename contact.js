@@ -11,7 +11,7 @@ const errorNodes = document.querySelectorAll(".error");
 function validateForm(){
     clearMessages();
     let errorFlag = false;
-    
+    let nam = nameInput.value.toLowerCase()
     if(nameInput.value.length < 1){
         errorNodes[0].innerText = "Name cannot be blank";
         nameInput.classList.add("error-border");
@@ -30,15 +30,11 @@ function validateForm(){
         errorFlag = true;
     }
 
-    if(nameInput.value = "Henrynes"){
-        window.location.replace('thanks.html');
-    }
-
-    if(phone.value.length >= 1){
-        window.location.replace('thanks.html');
+    if(nam == "henrynes"){
+       window.location.replace('thanks.html');
     }
     
-    if(!errorFlag){
+    if(!errorFlag && nam !== 'henrynes'){
         form.submit();
     }
 
